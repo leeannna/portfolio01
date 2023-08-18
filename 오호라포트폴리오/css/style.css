@@ -1,0 +1,359 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lilita+One&family=Montserrat+Alternates:wght@300&display=swap');
+* {
+	margin: 0px;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* header */
+header {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	position: fixed;
+	background-color: #fff;
+	left:0;
+	top:-100px;
+	z-index: 5;
+}
+header .inner {
+	width: 1180px;
+	height: 100px;
+	padding-bottom: 20px;
+	margin: 0px auto;
+	position: relative; /*자식 absolute 요소의 기준점 설정*/
+}
+header .inner h1 {
+	position: absolute;
+	left: 0px;
+	bottom: 15px;
+}
+header .inner h1 a {
+	font: bold 24px/1 "arial";
+	color: #444;
+}
+#util {
+	position: fixed;
+	top: -170px;
+	right: 390px;
+}
+header .inner .util li {
+	float: right;
+	margin-right: 30px;
+
+}
+header .inner .util li a {
+	display: block;
+	font: 12px/1 "arial";
+	color: #999;
+	padding: 0px 10px;
+}
+header .inner #gnb {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+header .inner #gnb li {
+	float: left;
+}
+header .inner #gnb li a {
+	display: block; /*인라인 요소는 block설정하여 크기를 조절가능*/
+	font: bold 17px/1 "arial";
+	color: #414040;
+	padding: 20px 40px;
+	transition: all 0.5s;
+}
+header .inner #gnb li a:hover {
+	background: #555;
+	color: #fff;
+}
+
+figure {
+	width: 100%;
+	height: calc(100vh - 120px); /*전체 브라우저 높이에서 120px만큼 빼줌*/
+	position: relative;
+	padding-top: 80px;
+	overflow: hidden;
+	background: #1a1919;
+	
+	
+}
+figure video {
+	object-fit: cover; /*영상을 figure안쪽에 꽉 차도록 설정*/
+	width: 100%;
+	height: 100%;
+	opacity: 80%;
+	position: absolute;
+	top: -50px;
+	left: 0px;
+}
+figure .inner {
+	width: 1180px;
+	margin: 0px auto;
+	padding-top: 200px;
+	position: absolute;
+	top: 240px; left:350px;
+}
+figure .inner h1 {
+	font: normal 80px "arial";
+	color: #fff;	
+	font-weight: 700;
+}
+
+figure .inner p {
+	font: 25px "arial";
+	color: #fff;
+	line-height: 1.6;
+	padding-bottom: 0px;
+}
+figure .inner a {
+	display: block;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #3f3f3f;
+	font: normal 25px "arial";
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1px;
+	transition: all 0.5s;
+}
+figure .inner a:hover {
+	background: #fff;
+	color: #555;
+}
+/*  visual 부분    */
+.visual h1 {
+	font-size: 80px;
+	color: #3e47c9;
+	text-align: center;
+	margin: 400px 0 100px 0;
+	font-family: 'Itim', cursive;
+	display: block;
+}
+
+
+/*  new nail  */
+.newnail .text h1 {
+	margin-top: 200px;
+	text-align: center;
+	font: bold;
+	font-size: 50px;
+	color: #3e47c9;
+	font-family: 'Itim', cursive;
+
+}
+.newnail .text1 h3 {
+	font-size: 25px;
+	text-align:center;
+	color:#3f3f3f;
+}
+.newnail .text1 h3 a:hover {
+	text-decoration:underline;
+}
+.newnail img {
+	width: 300px;
+}
+.newnail img:hover {
+	transition: 0.5s;
+	transform: scale3d(1.2, 1.2, 1);
+	border-bottom: 5px solid #8a8a8a;
+	
+}
+.newnail .pedi ul {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	padding-bottom: 50px;
+	
+}
+.newnail .pedi {	
+	height: 500px;
+}
+.newnail p {
+	color: #fff;
+	background: #0eaedf;
+	white-space: nowrap;
+	width: 50px;
+	text-align: center;
+	border-radius: 50px;
+	margin-top: 20px;
+}
+.newnail h4 {
+	margin-top: 30px;
+	line-height: 40px;
+}
+
+/*   커스텀 부분  */
+
+.custom .customtitle {
+	text-align:center;
+	margin-top: 200px;
+}
+.custom .customtitle h3 {
+	font-size: 30px;
+	display: inline-block;
+	background: #c8e5ff;
+}
+.custom .c1 img,
+.custom .c2 img,
+.custom .c3 img
+ {width: 400px;}
+
+.custom ul {
+	display: flex;
+	justify-content: center;	
+	margin-top: 110px;
+	gap: 60px;
+	transition: 0.8s;
+}
+.custom img:hover {
+	transition: 0.5s;
+	transform: scale3d(1.2, 1.2, 1);
+}
+.custom span {
+	font-size: 20px;
+	background: #c8e5ff;
+	font-weight: 600;
+}
+.custom .c2 {
+	position: relative;
+	top: 200px;
+}
+.custom .c3 {
+	position: relative;
+	bottom: 130px;
+}
+
+/*   custom1    */
+.custom1 .text {
+	margin-top: 450px;
+	text-align: center;
+}
+.custom1 .text h3 {
+	font-size: 30px;
+	display: inline-block;
+	background: rgba(243, 166, 243, 0.5);
+}
+.custom1 .text p {
+	font-size: 20px;
+	color: #504752;
+	margin-top: 30px;
+}
+.custom1 ul {
+	display: flex;
+	gap: 60px;
+	margin-top: 20px;
+}
+.custom1 img {
+	width: 400px;
+}
+.custom1 .c5 {
+	margin-top: 140px;
+}
+.custom1 span {
+	background: rgba(243, 166, 243, 0.5);
+	color: #030303;
+	font-weight: 600;
+}
+
+
+/*   이벤트 부분   */
+.event img {
+	width: 70%;
+}
+.event ul {
+	text-align: center;
+}
+.event {
+	text-align: center;
+}
+.event span {
+	width: 400px;
+	height: 60px;
+	margin-top: 200px;	 border-bottom: .4vw solid var(--black100);
+	position: sticky;
+	text-align:center;
+    top: 110px;
+	color: #444444;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 100px;
+	display: inline-block;
+	text-align: center;
+	background-color: #efefef;
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+	width: 100%;
+	background: #333;
+	padding: 100px 0px;
+	border-top: 1px solid #888;
+}
+footer .inner {
+	width: 1180px;
+	margin: 0px auto;
+}
+footer .inner .upper {
+	width: 100%;
+	border-bottom: 1px solid #777;
+	padding-bottom: 20px;
+}
+footer .inner .upper::after {
+	/*상단 영역 float해제*/
+	content: "";
+	display: block;
+	clear: both;
+}
+footer .inner .upper h1 {
+	float: left;
+	font: bold 24px/1 "arial";
+	color: #666;
+}
+footer .inner .upper ul {
+	float: right;
+}
+footer .inner .upper ul li {
+	float: left;
+	margin-left: 20px;
+}
+footer .inner .upper ul li a {
+	font: bold 14px/1 "arial";
+	color: #666;
+}
+footer .inner .lower {
+	width: 100%;
+	padding-top: 20px;
+}
+footer .inner .lower address {
+	width: 100%;
+	font: 12px/1.3 "arial";
+	color: #777;
+	margin-bottom: 20px;
+}
+footer .inner .lower p {
+	width: 100%;
+	font: 12px/1 "arial";
+	color: #777;
+}
