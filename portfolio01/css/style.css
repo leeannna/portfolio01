@@ -1,0 +1,496 @@
+@import url('default.css');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Indie+Flower&family=Mooli&family=Pacifico&display=swap');
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .menu {
+   text-align: center;
+   margin-left: 150px;
+}
+.header .logo h1 {
+    font-size:30px;
+    font-weight: 800;
+    color: #000000;
+   border: 1px solid #000000;
+    background-color: rgb(233, 233, 233);
+    padding: 3px;
+}
+.header .logo h1 a {
+    display: block;
+   
+   
+}
+
+.header .menu .head {
+    display: none;
+}
+
+.header .menu > ul > li {
+    display: inline-block;
+}
+.header .menu > ul > li:not(:last-child) {
+    margin-right: 40px;
+}
+.header .menu a {
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 1.6;
+    display: block; 
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-shadow: 1px 0 0 #333, 0 1px 0 #333, -1px 0 #333, 0 -1px 0 #333, -1px -1px #333, 1px 1px 0 #333;
+}
+.header .menu > ul > li > a {
+    padding: 20px 0;
+}
+.header .menu > ul > li > a:hover {
+    color: rgb(245, 88, 120);
+}
+.header-right .open-menu-btn {
+    display: none;
+}
+.header {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    border-bottom: 1px solid #444444;
+    z-index: 10;   
+    background-color: transparent;
+}
+.menu li a {
+    position: relative;
+}
+.menu li a::before {
+    content: "";
+    height: 5px;
+    width: 0px;
+    background-color: crimson;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;left: 0;
+    transition: all 0.3s;
+}
+.menu li a:hover::before {
+    width: 100%;
+    background-color: crimson;
+}
+.header-right ul {
+    display: flex;
+    gap: 20px;
+}
+.header-right span {
+    font-size: 28px;
+    color: #ffffff;
+    text-shadow: 1px 0 0 #333, 0 1px 0 #333, -1px 0 #333, 0 -1px 0 #333, -1px -1px #333, 1px 1px 0 #333;
+}
+.header-right > * {
+    margin-left: 20px;
+}
+.header-right span:hover {
+    color: rgb(245, 88, 120);
+}
+#box {
+    height: 650px;
+    border-bottom: 1px solid #797878;
+}
+.brand {
+    padding: 0 20px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  line-height: 1.6;
+  }
+  .brand .d {
+    font-size: 3.2vw;
+    font-weight: 800;
+    font-family: 'Mooli', sans-serif;
+    position: absolute;
+    top: 0;left: 300px; 
+    animation: slide 1s ease-out;
+  transition: all 1s;
+}
+.brand .text {
+    margin-top: 80px;
+    font-size: 20px;
+    position: absolute;
+    top: 70px; left: 250px;text-align: center;
+  transition: all 1s;
+  animation: slide 1s ease-out;
+  transition: all 1s;    
+}
+.brand .text p {
+    line-height: 2;
+    font-weight: 500;
+}
+.brand .text a {
+    display: inline-block;
+    padding: 5px;
+    font-weight: 500;
+    margin-top: 80px;
+    border: 1px solid #3D3D3D;
+    transition: all 0.5s ease;
+   
+}
+.brand .text a:hover {
+    transition: all 0.5s ease;
+    background-color: black;
+    color: aliceblue;transform: translateX(30px);
+}
+.brand .photo1{
+    width: 400px;height: 600px;
+    position: absolute;right: 200px;
+    top: 0;
+}
+@keyframes slide {
+    from{
+      left: -200px;
+      transition: all 1s;
+      opacity: 0;
+     
+    }
+    to {
+      left: 300px;
+   opacity: 1s;
+    }
+  }
+  @keyframes disappear {
+    from{
+      left: 300px;
+      opacity: 1;
+    }
+    to {
+      left: -100px;
+      opacity: 0;
+    }
+}
+/*  New 부분  */
+.fall {
+    position: relative;
+    padding: 0 20px;
+    z-index: 1;
+    line-height: 2;
+}
+
+.fall span {
+    display: block;
+}
+.fall strong {
+    font-size: 22px;
+}
+.fall h2 {
+    position: sticky;
+    text-align: left;
+    font-size: 3.1vw;
+    top: 10px; left: 0;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: 'Lilita One';
+    letter-spacing: 0.1em;
+   
+}
+.fall .newmore {
+    font-size: 20px;
+    border: 1px solid #010101;
+    padding: 3px;
+    transition: all 0.5s;
+    font-weight: 700;
+    margin-top: 50px;
+    position: absolute;
+}
+.fall .newmore:hover {
+    background-color: rgb(56, 56, 56);
+    transition: all 0.5s;
+    color: #fff;
+}
+.fall .inner {
+    margin-left: 400px;
+}
+
+
+.fall .inner ul li {
+    width: 400px;
+    margin: 0 0 50px 0;
+}
+.fall .fall1 {
+    display: flex;
+    justify-content: right;
+    gap: 100px;
+}
+.fall .fall2 {
+    display: flex;
+    justify-content: right;
+    gap: 100px;
+}
+.fall .fall1 li:nth-child(2),
+.fall .fall2 li:nth-child(2)  {
+    margin-top: 100px;
+}
+
+
+/*   상품진열 best 부분   */
+
+.best {
+    height: 750px;
+    padding: 50px 20px;
+    margin: 100px 0 150px 0;
+    position: relative;
+    width: 100%;
+    background-color: #ededed;
+}
+.best h2 {    
+    font-size: 3.2vw;
+    font-family: 'Lilita One';
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+}
+.best ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.best ul li:not(:last-child) {
+    margin-right: 12px;
+}
+.best ul li a {
+    display:block;
+}
+.best  ul li a span {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+.best img {
+    width: 300px; height: 100%;
+    transition: 0.5s;
+   
+}
+/*   .best ul {
+    display: flex;  
+    margin-bottom: 50px;
+} */
+
+.best ul li a:hover span img {
+    transform: scale3d(1.2,1.2,1); 
+}
+.best  ul li a strong {
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;
+    height: 2.6em;
+    overflow: hidden;
+}
+
+.best .more {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 30px; 
+    display: flex;
+    align-items: center;
+    right: 40px;
+    border: 1px solid #010101;
+    padding: 5px;
+    transition: all 0.5s;
+    
+}
+.best .more:hover {
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+#section3 { 
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 700px;
+
+}
+
+
+#section3 img {
+    border-radius: 50px;
+    transition: all 0.5 ease;
+}
+#section3 img:hover {
+   border: 5px solid #706f6f;
+    opacity: 62%;
+    transition: all 0.5 ease;
+}
+#section3 .photo {
+    width: 350px;
+    height: 400px;
+}
+
+.parallax__item1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    gap: 20px;
+    
+}
+.parallax__item1 h3{
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Lilita One';
+    letter-spacing: 0.1em;
+}
+.parallax__item1 .text {
+    text-align: center;
+    line-height: 1.5;
+}
+.parallax__item1 p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.parallax__item1 span {
+    font-size: 18px;
+    font-weight: 500;
+}
+#section3 .parallax__item__img {
+    width: 350px;
+    height: 350px;
+}
+
+
+aside {
+    position: fixed;
+    bottom:50px;
+    right: 20px;
+    z-index: 10;
+}
+aside button {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ededed;
+    background-color: #1D1D1D;
+    line-height: 0.3;
+    text-align: center;
+}
+aside button i {
+    font-size: 20px;
+}
+aside button span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+footer {
+    width: 100%;
+    background-color: #444444;
+    height: 270px;
+    position: relative;
+}
+em {font-style: normal;color: rgb(242, 195, 55);font-weight: 700;}
+.footer1 {
+    background-color: #606060;
+    width: 100%;height: 50px;padding: 15px;
+}
+
+.footer1 ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;flex-direction: row;
+}
+.footer1 ul li {
+    position: relative;
+}
+.footer1 ul li::after {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background: #c2c1c1;
+    right: -10px;
+    top: 38%;
+    margin-top: -5px;
+    content: "";
+}
+.footer1 ul li:last-child:after{
+    display: none;
+}
+.footer1 a {
+    color: #ededed;
+}
+.footer2 .con2 {
+    width: 600px;
+    padding: 20px;
+    position: absolute;
+    top: 80px;left: 300px;
+    line-height: 2;
+    color: #ededed;
+}
+.footer2 ul {
+    display: flex;
+    gap: 20px;
+}
+.footer2 ul li a {
+    font-size: 20px;
+    color: #ededed;
+    font-weight: bold;
+}
+.footer2 ul li::before {
+    content: '';
+    position: absolute;
+    width: 80px; height: 2px;
+    border-bottom: 2px solid #ededed;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.footer2 ul li:hover::before {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+select {
+    position: absolute;
+    top: 100px;
+    right: 320px;padding: 10px;
+}
+.m {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+    position: relative;
+}
+.card1 {
+
+    
+    width: 400px;height: 400px; overflow: hidden;position: relative;
+}
+.card1 .img {
+    transform: scale(1.15);object-fit: cover;transition:opacity 0.5s, transform 1s;
+}
+.card1:hover .img {transform: scale(1);opacity: 0.5;}
+.card1 .text {position: absolute; top: 0; left: 0; width: 100%;height: 100%;text-align: center;color: #fff;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.card1 .text::before {
+    content: '';
+    border: 5px solid #fff;
+    position: absolute;inset: 15px;
+    opacity: 0;
+    transition: all 0.1s; transform: scale(1.15);
+}
+.card1 .text h2 {text-shadow: 1px 1px 10px #333; margin-bottom: 10px;transform: translateY(20px);transition: all 0.5s;font-size: 35px;text-shadow: 2px 2px 2px #000;}
+.card1 .text p {font-size: 14px; transform: translateY(20px);transition: all 0.5s;opacity: 0;}
+.card1:hover .text::before {opacity: 1;transform: scale(1);}
+.card1:hover .text h2 {transform: translateY(0);}
+.card1:hover .text p {transform: translateY(0);opacity: 1;}
+
